@@ -1,0 +1,129 @@
+/* Tema Agrinho - Cultive o Verde */
+
+:root {
+    --verde-escuro: #1b5e20;
+    --verde-medio: #43a047;
+    --verde-claro: #a5d6a7;
+    --amarelo-campo: #fdd835;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+    color: var(--verde-escuro);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, var(--verde-escuro), var(--verde-medio));
+    color: var(--branco);
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Menu */
+nav {
+    background-color: var(--verde-medio);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--amarelo-campo);
+}
+
+/* Conteúdo */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+    border-left: 6px solid var(--verde-medio);
+    padding-left: 10px;
+}
+
+/* Cartões */
+.card {
+    background-color: var(--verde-claro);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: var(--verde-medio);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--verde-escuro);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 15px;
+    }
+}
